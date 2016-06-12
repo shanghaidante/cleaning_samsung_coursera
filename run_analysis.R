@@ -119,5 +119,5 @@ xFullDataAvgs <- summarize_each(group_by(select(xFullData, -activity_id, -source
 
 #write output in folder that hosts the Samsung data
 
-write.table(xFullDataAvgs,file="./data/UCI HAR Dataset/FullDataAvgs.txt", row.names = FALSE)
+write.table(xFullDataAvgs,file="./FullDataAvgs.txt", row.names = FALSE)
 
