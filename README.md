@@ -1,7 +1,9 @@
 # cleaning_samsung_coursera
 repository made for the assignment of getting and cleaning data on Coursera (Johns Hopkins)
 
-There is only one script, First1-2.R that does all the work.
+The file run_analysis.R assumes that there is another script zip.R that looks for the source over the internet, downloads and extracts it in the proper folder should it not have been done already.
+
+The zip file is meant to be in the wd, while data is in the subfolder ./data
 
 The script assumes that you have placed and unzipped the data within your working directoyr at "./data/UCI HAR Dataset".
 
