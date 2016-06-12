@@ -1,5 +1,4 @@
-# cleaning_samsung_coursera
-repository made for the assignment of getting and cleaning data on Coursera (Johns Hopkins)
+Repository made for the assignment of getting and cleaning data on Coursera (Johns Hopkins)
 
 The file run_analysis.R assumes that there is another script zip.R that looks for the source over the internet, downloads and extracts it in the proper folder should it not have been done already.
 
@@ -14,5 +13,16 @@ x, y and subject_test data files representing the variables' observation, the ac
 
 The folder "UCI HAR Dataset" has two files features.txt and activity_lables.txt that serve as reference.
 
-First begin by preparing the training and test data frames. Both require some transformation.
+There is also a new file "new feature names.txt" that includes all the measure names in the output file, since name was modified to be acceptable by R. In this file, the original feature name is together with the modified R name and a decomposition of the name into vector, measure, measure axis and domain (time or frequencey) which follow the original specifications.
 
+Original files can be found here
+
+A full description is available at the site where the data was obtained:
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+Here are the data for the project:
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+All credits of the original dataset to the work of Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz in Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
