@@ -46,7 +46,6 @@ The two sets are now ready to be merged. In this case, the operation is done wit
 Lastly, the script uses dplyr's summarize to group_by activity_name and subject while doing the mean of the selected variables, i.e. all measures with mean and std. The resulting data frame does not carry the activity_id or source of the measure.
 
 In the end, the output file "FullDataAvgs.txt" is written within the UCI HAR Dataset folder, i.e. "./data/UCI HAR Dataset"
-#write output in folder that hosts the Samsung data
 
 As a result, to the existing codebook the following variables are those that apply to the FullDataAvgs.txt file are described in the file "new feature names.txt" in the repository. Note that the difference between the original feature (variable name) and the "R acceptable" is that it replaces '-' and '(' or ')' by '.'
 
