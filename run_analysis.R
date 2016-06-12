@@ -121,14 +121,3 @@ xFullDataAvgs <- summarize_each(group_by(select(xFullData, -activity_id, -source
 
 write.table(xFullDataAvgs,file="./data/UCI HAR Dataset/FullDataAvgs.txt", row.names = FALSE)
 
-#clean workspace
-#first clean value
-#rm("activitiesPath", "datanames", "featureslist", 
-#            "featuresPath", "sTestPath", "sTrainPath", "xTestPath",
-#            "xTrainPath", "yTrainPath", "yTestPath")
-
-#then clean data save for the full data set and the col names
-#rm(activitynames, featuresnames, sTestData, sTrainData,
-##   xTestData, yTestData, xTrainData, yTrainData)
-
-
