@@ -48,54 +48,5 @@ Lastly, the script uses dplyr's summarize to group_by activity_name and subject 
 In the end, the output file "FullDataAvgs.txt" is written within the UCI HAR Dataset folder, i.e. "./data/UCI HAR Dataset"
 #write output in folder that hosts the Samsung data
 
-As a result, to the existing codebook the following variables are those that apply to the FullDataAvgs.txt file are described here below. Note that the difference between the original feature (variable name) and the "R acceptable" is that it replaces '-' and '(' or ')' by '.'
+As a result, to the existing codebook the following variables are those that apply to the FullDataAvgs.txt file are described in the file "new feature names.txt" in the repository. Note that the difference between the original feature (variable name) and the "R acceptable" is that it replaces '-' and '(' or ')' by '.'
 
-Variable Name			R Acceptable Name		domain	vectorname		measurefunction	measureaxis
-fBodyAccJerk-mean()-X		fBodyAcc.std...X		f	fBodyAccJerk		mean()		X
-fBodyAccJerk-mean()-Y		fBodyAcc.std...Y		f	fBodyAccJerk		mean()		Y
-fBodyAccJerk-mean()-Z		fBodyAcc.std...Z		f	fBodyAccJerk		mean()		Z
-fBodyAccJerk-std()-X		fBodyAccJerk.mean...X		f	fBodyAccJerk		std()		X
-fBodyAccJerk-std()-Y		fBodyAccJerk.mean...Y		f	fBodyAccJerk		std()		Y
-fBodyAccJerk-std()-Z		fBodyAccJerk.mean...Z		f	fBodyAccJerk		std()		Z
-fBodyAccMag-mean()		fBodyGyro.std...X		f	fBodyAccMag		mean()		NA
-fBodyAccMag-std()		fBodyGyro.std...Y		f	fBodyAccMag		std()		NA
-fBodyAcc-mean()-X		tBodyGyroMag.std..		f	fBodyAcc		mean()		X
-fBodyAcc-mean()-Y		tBodyGyroJerkMag.mean..		f	fBodyAcc		mean()		Y
-fBodyAcc-mean()-Z		tBodyGyroJerkMag.std..		f	fBodyAcc		mean()		Z
-fBodyAcc-std()-X		fBodyAcc.mean...X		f	fBodyAcc		std()		X
-fBodyAcc-std()-Y		fBodyAcc.mean...Y		f	fBodyAcc		std()		Y
-fBodyAcc-std()-Z		fBodyAcc.mean...Z		f	fBodyAcc		std()		Z
-fBodyBodyAccJerkMag-mean()	fBodyGyro.std...Z		f	fBodyBodyAccJerkMag	mean()		NA
-fBodyBodyAccJerkMag-std()	fBodyAccMag.mean..		f	fBodyBodyAccJerkMag	std()		NA
-fBodyBodyGyroJerkMag-mean()	fBodyBodyAccJerkMag.std..	f	fBodyBodyGyroJerkMag	mean()		NA
-fBodyBodyGyroJerkMag-mean()	fBodyBodyGyroJerkMag.mean..	f	fBodyBodyGyroJerkMag	mean()		NA
-fBodyBodyGyroJerkMag-std()	fBodyBodyGyroJerkMag.std..	f	fBodyBodyGyroJerkMag	std()		NA
-fBodyBodyGyroJerkMag-std()	fBodyBodyGyroMag.mean..		f	fBodyBodyGyroJerkMag	std()		NA
-fBodyBodyGyroMag-mean()		fBodyAccMag.std..		f	fBodyBodyGyroMag	mean()		NA
-fBodyBodyGyroMag-std()	fBodyBodyAccJerkMag.mean..		f	fBodyBodyGyroMag	std()		NA
-fBodyBodyGyroMag-std()	fBodyBodyGyroMag.std..			f	fBodyBodyGyroMag	std()		NA
-fBodyGyro-mean()-X	fBodyAccJerk.std...X			f	fBodyGyro		mean()		X
-fBodyGyro-mean()-Y	fBodyAccJerk.std...Y			f	fBodyGyro		mean()		Y
-fBodyGyro-mean()-Z	fBodyAccJerk.std...Z			f	fBodyGyro		mean()		Z
-fBodyGyro-std()-X	fBodyGyro.mean...X			f	fBodyGyro		std()		X
-fBodyGyro-std()-Y	fBodyGyro.mean...Y			f	fBodyGyro		std()		Y
-fBodyGyro-std()-Z	fBodyGyro.mean...Z			f	fBodyGyro		std()		Z
-tBodyAccJerkMag-mean()	tBodyAccMag.std..			t	tBodyAccJerkMag		mean()		NA
-tBodyAccJerkMag-std()	tGravityAccMag.mean..			t	tBodyAccJerkMag		std()		NA
-tBodyAccJerk-mean()-X	tBodyAccJerk.mean...X			t	tBodyAccJerk		mean()		X
-tBodyAccJerk-mean()-Y	tBodyAccJerk.mean...Y			t	tBodyAccJerk		mean()		Y
-tBodyAccJerk-mean()-Z	tBodyAccJerk.mean...Z			t	tBodyAccJerk		mean()		Z	
-tBodyAccJerk-std()-X	tBodyAccJerk.std...X			t	tBodyAccJerk		std()		X
-tBodyAccJerk-std()-Y	tBodyAccJerk.std...Y			t	tBodyAccJerk		std()		Y
-tBodyAccJerk-std()-Z	tBodyAccJerk.std...Z			t	tBodyAccJerk		std()		Z
-tBodyAccMag-mean()	tBodyGyroJerk.std...X			t	tBodyAccMag		mean()		NA
-tBodyAccMag-std()	tBodyGyroJerk.std...Y			t	tBodyAccMag		std()		NA
-tBodyAcc-mean()-X	tBodyAcc.mean...X			t	tBodyAcc		mean()		X
-tBodyAcc-mean()-Y	tBodyAcc.mean...Y			t	tBodyAcc		mean()		Y
-tBodyAcc-mean()-Z	tBodyAcc.mean...Z			t	tBodyAcc		mean()		Z
-tBodyAcc-std()-X	tBodyAcc.std...X			t	tBodyAcc		std()		X
-tBodyAcc-std()-Y	tBodyAcc.std...Y			t	tBodyAcc		std()		Y
-tBodyAcc-std()-Z	tBodyAcc.std...Z			t	tBodyAcc		std()		Z
-tBodyGyroJerkMag-mean()	tBodyAccJerkMag.std..			t	tBodyGyroJerkMag	mean()		NA
-tBodyGyroJerkMag-std()	tBodyGyroMag.mean..			t	tBodyGyroJerkMag	std()		NA
-tBodyGyroJerk-mean()-X	tBodyGyro.std...X			t	tBodyGyroJerk		mean()		X
